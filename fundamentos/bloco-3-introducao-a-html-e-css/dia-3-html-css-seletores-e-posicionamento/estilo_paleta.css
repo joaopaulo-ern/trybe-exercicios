@@ -1,13 +1,17 @@
 div:hover {
     border-style: solid;
     border-color: rgb(121, 0, 0);
-    margin: 1px;
+}
+
+div h3{
+    margin: 0 0 0 0;
 }
 
 div:nth-of-type(1){
     color: blue;
     font-style: italic;
 }
+
 div:nth-of-type(2){
     color: yellow;
 }
