@@ -3,8 +3,8 @@ div:hover {
     border-color: rgb(121, 0, 0);
 }
 
-div h3{
-    margin: 0 0 0 0;
+h3{
+    margin: 0;
 }
 
 div:nth-of-type(1){
