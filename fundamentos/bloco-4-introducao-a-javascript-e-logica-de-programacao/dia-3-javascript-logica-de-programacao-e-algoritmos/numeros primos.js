@@ -1,4 +1,4 @@
-let n = 23
+let n = 47
 let a = []
 for(let i = 2; i<n; i+=1){
     let b = n%i

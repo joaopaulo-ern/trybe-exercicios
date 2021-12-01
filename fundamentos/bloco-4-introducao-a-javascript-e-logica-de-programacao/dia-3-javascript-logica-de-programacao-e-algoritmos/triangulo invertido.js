@@ -1,16 +1,3 @@
-n=6
-let l = []
-for (let i = 1; i<=n; i+=1){
-    for (let j = n; j>=1; j-=1){
-        if (j-i >= i) {
-            l = l+' '
-        } else {
-            l = l+'*'
-        }
-    }
-    console.log(l)
-}   
-
 //certo
 n=6
 for (let i = 1; i<=n; i+=1){
