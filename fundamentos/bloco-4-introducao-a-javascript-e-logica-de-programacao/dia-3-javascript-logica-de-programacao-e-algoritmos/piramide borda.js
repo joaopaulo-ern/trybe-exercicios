@@ -1,13 +1,11 @@
-n=7
+n=21
 for (let i = 1; i<=n; i+=2){
     let l = []
     if(i==1){
         for (let j = (n-i)/2; j>=1; j-=1){
         l=l+' '
         }
-        for (let w = i; w>0; w-=1){
-            l=l+'*'
-        }
+        l=l+'*'
         for (let k = (n-i)/2; k>=1; k-=1){
             l=l+' '
         }
