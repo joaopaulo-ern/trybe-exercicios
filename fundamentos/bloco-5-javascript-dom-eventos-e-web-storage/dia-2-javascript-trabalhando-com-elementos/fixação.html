@@ -1,0 +1,44 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+
+    const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+
+    const paiElementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta").parentElement;
+    paiElementoOndeVoceEsta.style.color="red"  
+
+    const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+    primeiroFilhoDoFilho.innerText = "um texto a ele"
+
+    const primeiroFilho =paiElementoOndeVoceEsta.firstElementChild
+
+    const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling
+
+    const terceiroFilho = elementoOndeVoceEsta.nextElementSibling
+
+    const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+
+    const irmaoElementoOndeVoceEsta = document.createElement("section");
+    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+    pai.appendChild(irmaoElementoOndeVoceEsta);
+
+    for (let i = paiElementoOndeVoceEsta.childNodes.length-1; i>0; i-=1){
+      const rem = paiElementoOndeVoceEsta.childNodes[i]
+      if(rem!=elementoOndeVoceEsta){
+        rem.remove()
+      }
+    }
+
+    primeiroFilhoDoFilho.nextElementSibling.remove()
+
+  </script>
+</main>
