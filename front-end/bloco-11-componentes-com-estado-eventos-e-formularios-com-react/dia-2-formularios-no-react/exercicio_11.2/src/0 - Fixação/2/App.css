@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.labels {
+  display: flex;
+  gap: 10px;
+}
+
+.mensagem {
+  height: 10vh;
+  width: 30vh;
+  resize: none;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 25vh;
+  gap: 5px;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}

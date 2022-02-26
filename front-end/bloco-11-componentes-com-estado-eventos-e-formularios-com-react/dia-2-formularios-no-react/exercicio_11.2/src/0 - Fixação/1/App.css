@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.labels {
+  display: flex;
+}
+/* 
+.areaTexto {
+  height: 100px;
+  width: 100px;
+} */
