@@ -1,0 +1,35 @@
+'use strict';
+
+const sequelize = require("sequelize");
+
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.createTable('Employees', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER,
+      },
+      firstName: {
+        allowNull: false,
+        type: Sequelize.STRING,
+        field: 'first_name',
+      },
+      lastName: {
+        allowNull: false,
+        type: Sequelize.STRING,
+        field: 'last_name',
+      },
+      age: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        field: 'age',
+      },
+    });
+  },
+
+  async down (queryInterface, _Sequelize) {
+    await queryInterface.dropTable('Employees');
+  }
+};
