@@ -1,8 +1,0 @@
-Internet
-Unix
-Bash
-Sheel
-Git
-Zoom
-Slack
-Trybe
